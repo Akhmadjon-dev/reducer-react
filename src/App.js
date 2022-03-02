@@ -53,3 +53,13 @@ export default function App() {
     </div>
   );
 }
+
+// useMemo is a hook that allows us to memoize expensive computations
+// useCallback is a hook that allows us to memoize expensive functions
+// const memoResult = useMemo(() => a + b, [a, b])
+// const callbackResult = useCallback(a + b, [a, b])
+// const callbackResult = useCallback(() => a + b, [a, b])
+//   useEffect(() => {
+//     const callback = callbackResult()
+//     console.log(callback)   
+//   })
